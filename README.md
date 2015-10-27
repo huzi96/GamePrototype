@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This project aims to build a c# implementation of the game 2048
+This project aims to build a c# implementation of the game Wordament
 
 ### Pogress
 
