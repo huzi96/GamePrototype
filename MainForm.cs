@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace GamePrototype
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+            Trie t = new Trie();
+            t.init("shrink.txt");
+            Console.WriteLine(t.find("congratulations"));
         }
     }
 }
