@@ -8,11 +8,12 @@ namespace GamePrototype
 {
     class Model
     {
-        class Block
+        public class Block
         {
             public char letter;
+            public MainForm.Square square;
         }
-        Block [,]board;
+        public Block [,]board;
         
         public Model()
         {
@@ -28,6 +29,7 @@ namespace GamePrototype
                 for (int j = 0; j < 4; j++)
                 {
                     int number = rnd.Next(0, 26);
+                    board[i, j] = new Block();
                     board[i, j].letter = (char)(number + 'a');
                 }
             }
